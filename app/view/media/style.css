@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.container {
+  font-family: 'Montserrat', sans-serif;
+}
+nav {
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+  }
+.header {
+  background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
+  url('/birthsafe/app/view/images/home.png');
+  background-size: cover;
+  height: 465pt;
+}
+.bubbles{
+  position:absolute;
+  width:100%;
+  height: 100%;
+  z-index:0;
+  overflow:hidden;
+  top:0;
+  left:0;
+}
+.bubble{
+  position: absolute;
+  bottom:-100px;
+  width:40px;
+  height: 40px;
+  background:#f1f1f1;
+  border-radius:50%;
+  opacity:0.5;
+  animation: rise 10s infinite ease-in;
+}
+.bubble:nth-child(1){
+  width:60px;
+  height:60px;
+  left:10%;
+  animation-duration:8s;
+}
+.bubble:nth-child(2){
+  width:30px;
+  height:30px;
+  left:20%;
+  animation-duration:5s;
+  animation-delay:1s;
+}
+.bubble:nth-child(3){
+  width:80px;
+  height:80px;
+  left:35%;
+  animation-duration:7s;
+  animation-delay:2s;
+}
+.bubble:nth-child(4){
+  width:90px;
+  height:90px;
+  left:50%;
+  animation-duration:11s;
+  animation-delay:0s;
+}
+.bubble:nth-child(5){
+  width:75px;
+  height:75px;
+  left:55%;
+  animation-duration:6s;
+  animation-delay:1s;
+}
+.bubble:nth-child(6){
+  width:45px;
+  height:45px;
+  left:65%;
+  animation-duration:8s;
+  animation-delay:3s;
+}
+.bubble:nth-child(7){
+  width:100px;
+  height:100px;
+  left:70%;
+  animation-duration:12s;
+  animation-delay:2s;
+}
+.bubble:nth-child(8){
+  width:35px;
+  height:35px;
+  left:80%;
+  animation-duration:6s;
+  animation-delay:2s;
+}
+.bubble:nth-child(9){
+  width:20px;
+  height:20px;
+  left:70%;
+  animation-duration:5s;
+  animation-delay:1s;
+}
+.bubble:nth-child(10){
+  width:120px;
+  height:120px;
+  left:25%;
+  animation-duration:10s;
+  animation-delay:4s;
+}
+@keyframes rise{
+  0%{
+    bottom:-100px;
+    transform:translateX(0);
+  }
+  50%{
+    transform:translate(100px);
+  }
+  100%{
+    bottom:1080px;
+    transform:translateX(-200px);
+  }
+}
+.hero {
+  animation: hero 3s infinite ease-in-out alternate;
+}
+@keyframes hero {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.0); }
+}
+.community-header {
+  background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
+  url('/birthsafe/app/view/images/portrait.avif');
+  background-size: cover;
+}
+.logo {
+  width: 170pt; 
+  margin-top: -40pt;
+}
+.logo2 {
+  margin-top: -40pt;
+}
+.btmb {
+  background-color: #0d6efd;
+  border: 0pt;
+  border-radius: 5pt;
+}
+#container2 {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Desktop View */
+@media screen and (min-width: 600px) {
+  .hero {
+    height: 90%;
+    width: 90%;
+  }
+  .typewrite {
+    margin-top: 40pt;
+    font-size: 50pt;
+    font-weight: bolder;
+  }
+  .why img {
+    height: 100%;
+  }
+}
+
+
+/* Mobile View */
+@media screen and (max-width: 600px) {
+  .header {
+    background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
+    url('/birthsafe/app/view/images/black-mother.avif');
+    background-size: cover;
+    height: 465pt;
+  }
+  .community {
+    width: 200pt;
+    height: 150pt;
+  }
+  .why .col img {
+    width: 200pt;
+    height: 350pt;
+  }
+  .logo {
+    width: 130pt; 
+    margin-top: -40pt;
+    margin-left: -20pt;
+  }
+  .logo2 {
+    margin-top: -40pt;
+  }
+  .btmb {
+    background-color: #0d6efd;
+    border: 0pt;
+    border-radius: 5pt;
+  }
+  #container2 {
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+}

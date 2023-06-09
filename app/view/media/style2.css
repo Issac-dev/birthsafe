@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+div#nav {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+}
+
+div#nav p {
+  font-family: 'Raleway', sans-serif;
+  padding: 5pt;
+  background-color: #d9dedb;
+}
+
+.dropdown-toggl {
+  padding: 0;
+  width: 80%;
+  text-decoration: none;
+}
+
+/**** ****/
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 10pt;
+  margin-top: 10px;
+  padding: 10pt;
+  background: #d4d9d6;
+}
+.dropdown2 {
+  display: none;
+  position: absolute;
+  top: 10pt;
+  margin-top: 10px;
+  padding: 10pt;
+  background: #d4d9d6;
+}
+
+.dropdown li {
+  list-style-type: none;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  padding: 0em 1em;
+  display: block;
+}
+
+.form {
+  background-color: #d4d9d6;
+  width: 80%;
+}
+.title {
+  font-family: 'Raleway', sans-serif;
+}
+.bt {
+  border: 0pt;
+  background-color: rgb(230, 229, 229);
+  text-align: left;
+  width: 80%;
+  padding: 10pt;
+}
+.bt2 {
+  border: 0pt;
+  background-color: white;
+  text-align: left;
+  width: 50pt;
+}
+.bt4 {
+  margin-bottom: 200pt;
+}
+.bt3 {
+  border: 0pt;
+  background-color: white;
+  text-align: left;
+  width: 50pt;
+}
+.bt5 {
+  border: 0pt;
+  background-color: rgb(230, 229, 229);
+  text-align: left;
+  width: 80%;
+  padding: 10pt;
+}
+#message {
+  margin-top: 61vh;
+  width: 45%;
+  position: absolute;
+  opacity: 0.9;
+}
+#text {
+  width: 75%; 
+  float: left; 
+  padding: 0pt;
+}
+#btn {
+  width: 20%; 
+  float: right; 
+  padding: 0pt;
+}
+@media only screen and (min-width : 600px) {
+
+
+.right{
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+
+/*Remove the scrollbar from Chrome, Safari, Edge and IE*/
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+* {
+  -ms-overflow-style: none !important;
+}
+}
+@media only screen and (max-width : 600px) {
+  div#nav p {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    padding: 5pt;
+    background-color: #d9dedb;
+  }
+  .bt {
+    border: 0pt;
+    background-color: rgb(230, 229, 229);
+    text-align: left;
+    margin-left: -80pt;
+    width: 240pt;
+    padding: 10pt;
+  }
+  .bt2 {
+    border: 0pt;
+    background-color: white;
+    text-align: left;
+    margin-left: -80pt;
+    width: 240pt;
+  }
+  .bt3 {
+    border: 0pt;
+    background-color: white;
+    text-align: left;
+    margin-left: -80pt;
+    width: 40pt;
+  }
+  .bt4 {
+    border: 0pt;
+    background-color: white;
+    text-align: left;
+    margin-left: -1000pt;
+    width: 240pt;
+    margin-bottom: -100pt;
+  }
+  .bt5 {
+    border: 0pt;
+    background-color: rgb(230, 229, 229);
+    text-align: left;
+    margin-left: -10pt;
+    width: 70%;
+    padding: 10pt;
+  }
+  .form input {
+    width: 100%;
+  }
+
+  .form textarea {
+    width: 100%;
+  }
+
+  .dropdown {
+    background-color: #d4d9d6;
+    width: 240pt;
+    margin-left: -80pt;
+  }
+  .dropdown2 {
+    display: none;
+    width: 80%;
+    padding: 20pt;
+    height: 220pt;
+    z-index: 1;
+    margin-left: -10pt;
+  }
+  .head2 {
+    display: none;
+}
+.sett {
+  margin-left: -80pt;
+  width: 260pt;
+}
+#message {
+  margin-top: -1pt;
+  position: relative;
+  width: 100%;
+  opacity: 0.9;
+}
+#text {
+  width: 160pt; 
+  float: left; 
+  padding: 0pt;
+}
+#btn {
+  width: 40pt; 
+  float: right; 
+  padding: 0pt;
+}
+}
