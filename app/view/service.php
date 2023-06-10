@@ -109,7 +109,7 @@
                         </ul>
                         <form action="/functions" method="post">
                             <input type="hidden" name="subscribe_plan" value="0">
-                            <input class="btmi mb-3 w-75" type="email" name="email" placeholder="Email" required>
+                            <input class="btmi mb-3 w-75" type="email" name="email" placeholder="Email" required><br>
                             <button class="btmb w-75 mb-5" value="submit" name="subscribe">Subscribe</button>
                         </form>
                     </div>
