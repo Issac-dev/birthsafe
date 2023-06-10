@@ -28,7 +28,14 @@ require("heading.php");
             <div class="col">
                 <div class="row">
                     <?php
-                    $sql = "SELECT * FROM `tasks` ORDER BY `id` DESC LIMIT 3;";
+                    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/admin/connection.php';
+                    $emailcat = $_SESSION['email'];
+                    $selectcat = "SELECT `category` FROM `users` WHERE `email` = '$emailcat'";
+                    $setcategory = mysqli_query($con, $selectcat);
+                    while ($row = mysqli_fetch_array($setcategory)) {
+                        $usercategory = $row['category'];
+                    }
+                    $sql = "SELECT * FROM `tasks` WHERE `category` = '$usercategory' ORDER BY `id` DESC;";
                     $feed = mysqli_query($con, $sql);
                     while ($row = mysqli_fetch_array($feed)) {
                         $title5 = $row['task'];
@@ -54,11 +61,11 @@ require("heading.php");
                 <div class="row">
                     <div id="nav">
                         <p class="dropdown-toggl lead mt-3 set">Create a Task <i class="fa fa-list-check"></i></p>
-                        <div class="dropdown">
+                        <div class="dropdown3">
                             <form class="form" method="POST" action="/functions" enctype='multipart/form-data'>
                                 <label for="title">Task</label><br>
                                 <input type="text" name="task" required><br>
-                                <label for="image">Image</label><br>
+                                <label for="image">Media</label><br>
                                 <input type="file" name="img"><br>
                                 <label for="date">Date</label><br>
                                 <input type="date" name="date" required>
@@ -69,9 +76,11 @@ require("heading.php");
                 </div>
                 <div class="row">
                     <?php
-                    $sql = "SELECT * FROM `tasks` ORDER BY `id` DESC LIMIT 20";
+                    $sql = "SELECT * FROM `tasks` WHERE `category` = '$usercategory'";
                     $feed = mysqli_query($con, $sql);
                     while ($row = mysqli_fetch_array($feed)) {
+                        $id = $row['id'];
+                        $title = $row['task'];
                         $id = $row['id'];
                         $title = $row['task'];
                         $date = $row['date'];
@@ -94,7 +103,7 @@ require("heading.php");
             <script>
                 $(function() { // Dropdown toggle
                     $('.dropdown-toggl').click(function() {
-                        $(this).next('.dropdown').slideToggle();
+                        $(this).next('.dropdown3').slideToggle();
                     });
                 });
             </script>

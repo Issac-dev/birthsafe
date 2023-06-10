@@ -137,6 +137,9 @@ nav {
   border: 0pt;
   border-radius: 5pt;
 }
+.btmi {
+  border-radius: 5pt;
+}
 #container2 {
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;

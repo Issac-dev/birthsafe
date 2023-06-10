@@ -158,7 +158,7 @@ if (isset($_POST['createtask'])) {
   $task = cleanme($_POST['task']);
   $date = cleanme($_POST['date']);
   $image = $_FILES['img']['name'];
-  $folder = "birthsafe/app/backend/images/";
+  $folder = "birthsafe/app/backend/media/";
   move_uploaded_file($_FILES["img"]["tmp_name"], "$folder" . $_FILES["img"]["name"]);
   $target = "birthsafe/app/backend/images/" . basename($image);
   $sql = "INSERT INTO `tasks`(`task`, `image`, `date`) VALUES ('$task', '$image', '$date')";
@@ -291,5 +291,51 @@ if (isset($_POST['changepassword'])) {
     $up = mysqli_query($con, $update);
     require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/backend/logout.php';
   }
+}
+if (isset($_POST['subscribe'])) {
+  $email = cleanme($_POST['email']);
+  $category  = cleanme($_POST['subscribe_plan']);
+  switch ($category) {
+    case '0':
+      $price = 2800 * 100;
+      break;
+    case '1':
+      $price = 1000 * 100;
+      break;
+    case '2':
+      $price = 1000 * 100;
+      break;
+    case '3':
+      $price = 1000 * 100;
+      break;
+  }
+  $url = "https://api.paystack.co/transaction/initialize";
+  $fields = [
+    'email' => $email,
+    'amount' => $price,
+    'callback_url' => 'http://localhost?email=' . $email . '&cat=' . $category
+  ];
+  $fields_string = http_build_query($fields);
+  //open connection
+  $ch = curl_init();
+
+  //set the url, number of POST vars, POST data
+  curl_setopt($ch, CURLOPT_URL, $url);
+  curl_setopt($ch, CURLOPT_POST, true);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
+  curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    "Authorization: Bearer sk_test_8107e21a1ceb676ae1cfd7deb5ae0c21124e674d",
+    "Cache-Control: no-cache",
+  ));
+
+  //So that curl_exec returns the contents of the cURL; rather than echoing it
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+  //execute post
+  $result = curl_exec($ch);
+  $myarray = json_decode($result);
+  $result2 = ($myarray->data->authorization_url);
+  // echo $result;
+  header("Location: $result2");
 }
 ?>

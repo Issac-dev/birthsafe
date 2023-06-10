@@ -11,6 +11,7 @@ div#nav p {
 }
 
 .dropdown-toggl {
+  background-color: #c6cac8;
   padding: 0;
   width: 80%;
   text-decoration: none;
@@ -98,7 +99,10 @@ div#nav p {
 }
 @media only screen and (min-width : 600px) {
 
-
+  .dropdown3 {
+    display: none;
+    width: 100%;
+  }
 .right{
   overflow-y: scroll;
   height: 100vh;
@@ -180,6 +184,10 @@ div#nav p {
     height: 220pt;
     z-index: 1;
     margin-left: -10pt;
+  }
+  .dropdown3 {
+    display: none;
+    width: 100%;
   }
   .head2 {
     display: none;

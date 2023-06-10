@@ -107,9 +107,10 @@
                             <li>Supplement protocol</li>
                             <li>3 Group consultation</li>
                         </ul>
-                        <form action="/function" method="post">
-                            <input type="hidden" name="subscribe_plan" value="yearly">
-                            <button class="btmb w-75 mb-5" value="submit" name="subscribe"></button>
+                        <form action="/functions" method="post">
+                            <input type="hidden" name="subscribe_plan" value="0">
+                            <input class="btmi mb-3 w-75" type="email" name="email" placeholder="Email" required>
+                            <button class="btmb w-75 mb-5" value="submit" name="subscribe">Subscribe</button>
                         </form>
                     </div>
                 </div>
@@ -140,9 +141,10 @@
                         <div class="row m-3 p-3">
                             <h3 class="">1st Trimester</h3>
                             <h4 class="lead"><i class="fa fa-naira-sign">1,000</i>/Monthly</h4>
-                            <form action="/function" method="post">
-                                <input type="hidden" name="subscribe_plan" value="yearly">
-                                <button class="btmb w-75 mb-5" value="submit" name="subscribe"></button>
+                            <form action="/functions" method="post">
+                                <input type="hidden" name="subscribe_plan" value="1">
+                                <input class="btmi mb-3 w-75" type="email" name="email" placeholder="Email" required>
+                                <button class="btmb w-75 mb-5" value="submit" name="subscribe">Subscribe</button>
                             </form>
                         </div>
                     </div>
@@ -153,9 +155,10 @@
                         <div class="row m-3 p-3">
                             <h3 class="">2nd Trimester</h3>
                             <h4 class="lead"><i class="fa fa-naira-sign">1,000</i>/Monthly</h4>
-                            <form action="/function" method="post">
-                                <input type="hidden" name="subscribe_plan" value="yearly">
-                                <button class="btmb w-75 mb-5" value="submit" name="subscribe"></button>
+                            <form action="/functions" method="post">
+                                <input type="hidden" name="subscribe_plan" value="2">
+                                <input class="btmi mb-3 w-75" type="email" name="email" placeholder="Email" required>
+                                <button class="btmb w-75 mb-5" value="submit" name="subscribe">Subscribe</button>
                             </form>
                         </div>
                     </div>
@@ -166,9 +169,10 @@
                         <div class="row m-3 p-3">
                             <h3 class="">3rd Trimester</h3>
                             <h4 class="lead"><i class="fa fa-naira-sign">1,000</i>/Monthly</h4>
-                            <form action="/function" method="post">
-                                <input type="hidden" name="subscribe_plan" value="yearly">
-                                <button class="btmb w-75 mb-5" value="submit" name="subscribe"></button>
+                            <form action="/functions" method="post">
+                                <input type="hidden" name="subscribe_plan" value="3">
+                                <input class="btmi mb-3 w-75" type="email" name="email" placeholder="Email" required>
+                                <button class="btmb w-75 mb-5" value="submit" name="subscribe">Subscribe</button>
                             </form>
                         </div>
                     </div>
