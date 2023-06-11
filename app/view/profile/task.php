@@ -62,7 +62,7 @@ require("heading.php");
             <div class="col right">
                 <div class="nav">
                     <p class="dropdown-toggl lead mt-3 set">Create a Task <i class="fa fa-list-check"></i></p>
-                    <div class="dropdown3">
+                    <div class="dropdown3" style="display: none; width:100%;">
                         <form class="form" method="POST" action="/functions" enctype='multipart/form-data'>
                             <label for="title">Task</label><br>
                             <input type="text" name="task" required><br>
