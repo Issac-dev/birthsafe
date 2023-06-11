@@ -28,7 +28,14 @@ require("heading.php");
             <div class="col">
                 <div class="row">
                     <?php
-                    $sql = "SELECT * FROM `tasks` ORDER BY `id` DESC LIMIT 3;";
+                    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/admin/connection.php';
+                    $emailcat = $_SESSION['email'];
+                    $selectcat = "SELECT `category` FROM `users` WHERE `email` = '$emailcat'";
+                    $setcategory = mysqli_query($con, $selectcat);
+                    while ($row = mysqli_fetch_array($setcategory)) {
+                        $usercategory = $row['category'];
+                    }
+                    $sql = "SELECT * FROM `tasks` WHERE `category` = '$usercategory' ORDER BY `id` DESC;";
                     $feed = mysqli_query($con, $sql);
                     while ($row = mysqli_fetch_array($feed)) {
                         $title5 = $row['task'];
