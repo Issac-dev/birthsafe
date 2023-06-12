@@ -338,6 +338,7 @@ if ($_SESSION['active'] != 1) {
         </form>
         <a href="/profile" class="nav-item nav-link mt-1"><i class="fa fa-home fa-2x"></i>
         </a>
+        <a href="/call" class="nav-item nav-link mt-1"><i class="fa fa-phone fa-2x"></i></a>
         <a href="/tasks" class="nav-item nav-link mt-1"><i class="fa fa-bell fa-2x"></i></a>
         <a href="/settings" class="nav-item nav-link mt-1"><i class="fa fa-gear fa-2x"></i></a>
         <a href="/logout" class="nav-item nav-link mt-1"><i class="fa fa-arrow-right-from-bracket fa-2x"></i></a>

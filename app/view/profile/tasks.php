@@ -65,6 +65,8 @@ require("heading.php");
                             <form class="form" method="POST" action="/functions" enctype='multipart/form-data'>
                                 <label for="title">Task</label><br>
                                 <input type="text" name="task" required><br>
+                                <label for="title">Text</label><br>
+                                <textarea type="text" name="text" cols="30" rows="10"></textarea><br>
                                 <label for="image">Media</label><br>
                                 <input type="file" name="img"><br>
                                 <label for="date">Date</label><br>

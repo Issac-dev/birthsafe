@@ -156,12 +156,19 @@ if (isset($_POST['create'])) {
 
 if (isset($_POST['createtask'])) {
   $task = cleanme($_POST['task']);
+  $text = cleanme($_POST['text']);
   $date = cleanme($_POST['date']);
   $image = $_FILES['img']['name'];
   $folder = "birthsafe/app/backend/media/";
+  if (preg_match('/\'/', $task)) {
+    $task = preg_replace('/\'/', '', $comment);
+  };
+  if (preg_match('/\'/', $text)) {
+    $task = preg_replace('/\'/', '', $text);
+  };
   move_uploaded_file($_FILES["img"]["tmp_name"], "$folder" . $_FILES["img"]["name"]);
   $target = "birthsafe/app/backend/images/" . basename($image);
-  $sql = "INSERT INTO `tasks`(`task`, `image`, `date`) VALUES ('$task', '$image', '$date')";
+  $sql = "INSERT INTO `tasks`(`task`, `text`, `image`, `date`) VALUES ('$task', '$text', '$image', '$date')";
   $add = mysqli_query($con, $sql);
   if ($add) {
     header('Location: /tasks');
@@ -179,9 +186,11 @@ if (isset($_POST['addcomment'])) {
   $audiofile = "birthsafe/app/backend/audiofile/";
   $date = date("Y/m/d");
   if (preg_match('/\'/', $comment)) {
-    $comment = str_replace("'", "", $comment);
+    $comment = preg_replace('/\'/', '', $comment);
   };
-
+  if (preg_match('/\'/', $title3)) {
+    $task = preg_replace('/\'/', '', $title3);
+  };
   move_uploaded_file($_FILES["img"]["tmp_name"], "$folder" . $_FILES["img"]["name"]);
   $target = "birthsafe/app/backend/images/" . basename($image);
 

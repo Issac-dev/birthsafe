@@ -148,6 +148,9 @@ nav {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+.subsc {
+  margin-top: 40pt;
+}
 
 /* Desktop View */
 @media screen and (min-width: 600px) {

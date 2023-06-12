@@ -81,7 +81,7 @@ require("heading.php");
                             <img style="height: 100%; width: 100%;" class="mt-1 mb-5" src="/birthsafe/app/backend/images/<?php echo "$image"; ?>" class="img-fluid" alt="...">
                         </div>
                         <div class="lead">
-                            <p><?php echo $body; ?></p>
+                            <p><?php echo nl2br($body); ?></p>
                         </div>
                         <div class="row">
                             <?php

@@ -66,6 +66,8 @@ require("heading.php");
                         <form class="form" method="POST" action="/functions" enctype='multipart/form-data'>
                             <label for="title">Task</label><br>
                             <input type="text" name="task" required><br>
+                            <label for="title">Text</label><br>
+                            <textarea type="text" name="text" cols="30" rows="10"></textarea><br>
                             <label for="image">Media</label><br>
                             <input type="file" name="img"><br>
                             <label for="date">Date</label><br>
@@ -83,6 +85,7 @@ require("heading.php");
                     while ($row = mysqli_fetch_array($feed)) {
                         $id = $row['id'];
                         $title = $row['task'];
+                        $body = $row['text'];
                         $date = $row['date'];
                         $image = $row['image'];
                         $ext = pathinfo($image, PATHINFO_EXTENSION);
@@ -134,6 +137,9 @@ require("heading.php");
                                 <source src="/birthsafe/app/backend/media/<?php echo "$vn"; ?>" type="audio/ogg">
                                 <source src="/birthsafe/app/backend/media/<?php echo "$vn"; ?>" type="audio/webm">
                             </audio>
+                            <div class="lead">
+                                <p><?php echo nl2br($body); ?></p>
+                            </div>
                         </div>
                 </div>
             <?php } ?>
