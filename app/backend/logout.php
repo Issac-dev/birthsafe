@@ -1,5 +1,5 @@
 <?php
-    require $_SERVER['DOCUMENT_ROOT'].'/birthsafe/app/admin/connection.php';
-    session_start();
-        session_destroy();
-        header('Location: /');
+require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/admin/connection.php';
+session_start();
+session_destroy();
+header('Location: /');

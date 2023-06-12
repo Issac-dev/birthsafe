@@ -73,7 +73,7 @@ if ($_SESSION['active'] != 1) {
 <html lang="en">
 
 <head>
-  <link rel='icon' type='image/x-icon' href='/birthsafe/app/view/images/png_20230114_152034_0000.png' />
+  <link rel='icon' type='image/x-icon' href='/birthsafegit/app/view/images/png_20230114_152034_0000.png' />
 
   <meta http-equiv='X-UA-Compatible' content='IE=edge' />
   <meta name='viewport' content='width=device-width, initial-scale=1.0' />
@@ -81,7 +81,7 @@ if ($_SESSION['active'] != 1) {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' />
-  <link rel='stylesheet' href='/birthsafe/app/view/media/style2.css' />
+  <link rel='stylesheet' href='/birthsafegit/app/view/media/style2.css' />
   <title></title>
 </head>
 <style>
@@ -316,7 +316,7 @@ if ($_SESSION['active'] != 1) {
           <p class="lead m-3" style="display: flex; justify-content: space-between;">
             <i class="fa fa-user fa-1x pt-1 pe-3"></i>
             <?php
-            require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/admin/connection.php';
+            require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/admin/connection.php';
             $useremail = $_SESSION['email'];
             echo "$useremail";
             $user = "SELECT * FROM `users` WHERE `email` = '$useremail'";

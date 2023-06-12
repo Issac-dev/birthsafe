@@ -4,13 +4,13 @@
 <head>
 
   <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-  <link rel='icon' type='image/x-icon' href='/birthsafe/app/view/images/png_20230114_152034_0000.png' />
+  <link rel='icon' type='image/x-icon' href='/birthsafegit/app/view/images/png_20230114_152034_0000.png' />
   <meta name='viewport' content='width=device-width, initial-scale=1.0' />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' />
-  <link rel='stylesheet' href='/birthsafe/app/view/media/style.css' />
+  <link rel='stylesheet' href='/birthsafegit/app/view/media/style.css' />
   <title>Birthsafe</title>
 </head>
 <style>
@@ -161,7 +161,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h3 class="display-5"><img class="rounded logo" style="" src="/birthsafe/app/view/images/png_20230114_152034_0000.png" class="img-fluid" alt="..."></h3>
+          <h3 class="display-5"><img class="rounded logo" style="" src="/birthsafegit/app/view/images/png_20230114_152034_0000.png" class="img-fluid" alt="..."></h3>
         </div>
         <div class="col">
           <a class="btn">

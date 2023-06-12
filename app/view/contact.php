@@ -9,13 +9,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/b2b66f5784.js" crossorigin="anonymous"></script>
 
-    <script src="/birthsafe/app/view/media/script.js"></script>
+    <script src="/birthsafegit/app/view/media/script.js"></script>
     <title>birthsafe - Contact Us</title>
 </head>
 <style>
     .header-service {
         background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
-            url('/birthsafe/app/view/images/nig5.avif');
+            url('/birthsafegit/app/view/images/nig5.avif');
         background-size: cover;
         height: 465pt;
     }
@@ -54,7 +54,7 @@
     @media screen and (max-width: 600px) {
         .header-service {
             background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
-                url('/birthsafe/app/view/images/pexels5.webp');
+                url('/birthsafegit/app/view/images/pexels5.webp');
             background-size: cover;
             height: 465pt;
         }
@@ -135,7 +135,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img class="mt5" style="" src="/birthsafe/app/view/images/woman-holding.avif" class="img-fluid" alt="...">
+                <img class="mt5" style="" src="/birthsafegit/app/view/images/woman-holding.avif" class="img-fluid" alt="...">
             </div>
             <div class="col m-2 mt-5 p-3">
                 <form action="post">

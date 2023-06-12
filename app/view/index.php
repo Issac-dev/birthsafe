@@ -9,13 +9,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/b2b66f5784.js" crossorigin="anonymous"></script>
 
-    <script src="/birthsafe/app/view/media/script.js"></script>
+    <script src="/birthsafegit/app/view/media/script.js"></script>
     <title>birthsafe</title>
 </head>
 <style>
     .header-service {
         background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
-            url('/birthsafe/app/view/images/young-mom.avif');
+            url('/birthsafegit/app/view/images/young-mom.avif');
         background-size: cover;
         height: 465pt;
     }
@@ -37,7 +37,7 @@
     @media screen and (max-width: 600px) {
         .header-service {
             background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
-                url('/birthsafe/app/view/images/pexels3.jpeg');
+                url('/birthsafegit/app/view/images/pexels3.jpeg');
             background-size: cover;
             height: 465pt;
         }
@@ -101,21 +101,21 @@
     <div class="container">
         <div class="row m-2">
             <div class="col shadow-lg m-3 p-3 rounded" data-aos='fade-up'>
-                <div class="row justify-content-center"><img class="mt-3 rounded-circle hero" style="width: 150pt; height:130pt;" src="/birthsafe/app/view/images/adult.jpg" class="img-fluid" alt="..."></div>
+                <div class="row justify-content-center"><img class="mt-3 rounded-circle hero" style="width: 150pt; height:130pt;" src="/birthsafegit/app/view/images/adult.jpg" class="img-fluid" alt="..."></div>
                 <div class="row text-center p-4">
                     <h3>Birthsafe</h3>
                     <p>Welcome to our pregnancy website, a place where you can find all the information and support you need to have a healthy and happy pregnancy. Whether you're a first-time mom or a seasoned pro, our website has everything you need to know to make the most of this exciting time in your life.</p>
                 </div>
             </div>
             <div class="col shadow-lg m-3 p-3 rounded" data-aos='fade-up'>
-                <div class="row justify-content-center"><img class="mt-3 rounded-circle hero" style="width: 150pt; height:130pt;" src="/birthsafe/app/view/images/family.jpg" class="img-fluid" alt="..."></div>
+                <div class="row justify-content-center"><img class="mt-3 rounded-circle hero" style="width: 150pt; height:130pt;" src="/birthsafegit/app/view/images/family.jpg" class="img-fluid" alt="..."></div>
                 <div class="row text-center p-4">
                     <h3>Services and Support</h3>
                     <p>We offer a wide range of services and support to help you through every stage of your pregnancy. From prenatal classes and breastfeeding support to pregnancy fitness and nutrition tips, we've got you covered. Our team of experienced professionals is here to answer your questions and offer guidance every step of the way.</p>
                 </div>
             </div>
             <div class="col shadow-lg m-3 p-3 rounded" data-aos='fade-up'>
-                <div class="row justify-content-center"><img class="mt-3 rounded-circle hero" style="width: 150pt; height:130pt;" src="/birthsafe/app/view/images/hands.jpg" class="img-fluid" alt="..."></div>
+                <div class="row justify-content-center"><img class="mt-3 rounded-circle hero" style="width: 150pt; height:130pt;" src="/birthsafegit/app/view/images/hands.jpg" class="img-fluid" alt="..."></div>
                 <div class="row text-center p-4">
                     <h3>Pregnancy Information</h3>
                     <p>We know that pregnancy can be overwhelming, so we've compiled a comprehensive list of articles and resources to help you navigate this exciting time. Our website covers everything from the first trimester to postpartum care, and we've got information on everything from pregnancy symptoms to baby development.</p>
@@ -126,7 +126,7 @@
     <div class="container community-header mt-5">
         <div class="row m-2">
             <div class="col m-2 p-3" data-aos='flip-right'>
-                <img class="rounded community" src="/birthsafe/app/view/images/pink.jpg" class="img-fluid" alt="...">
+                <img class="rounded community" src="/birthsafegit/app/view/images/pink.jpg" class="img-fluid" alt="...">
             </div>
             <div class="col m-2 p-3" data-aos='flip-left'>
                 <h2 class="display-5">Community</h2>
@@ -272,7 +272,7 @@
                 </ul>
             </div>
             <div class="col-7 d-flex m-3 p-3">
-                <div class="col"><img class="rounded" src="/birthsafe/app/view/images/pexels.webp" class="img-fluid" alt="..."></div>
+                <div class="col"><img class="rounded" src="/birthsafegit/app/view/images/pexels.webp" class="img-fluid" alt="..."></div>
             </div>
         </div>
     </div>
@@ -293,7 +293,7 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/birthsafe/app/view/images/mig4.avif" class="d-block w-100" alt="...">
+                            <img src="/birthsafegit/app/view/images/mig4.avif" class="d-block w-100" alt="...">
                             <div class="aft">
                                 <h5 style="color: black;">Ajayi Esther</h5>
                                 <p style="color: black;">"I can't say enough great things about the care I received. From my very first appointment, I felt welcomed and supported by the entire team. They took the time to listen to my concerns and answer all of my questions, and I felt like they really cared about me and my baby. When it came time to deliver, I felt completely confident in the team's abilities and was so grateful for their expertise and guidance during the whole process."</p>
@@ -304,7 +304,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/birthsafe/app/view/images/nig2.avif" class="d-block w-100" alt="...">
+                            <img src="/birthsafegit/app/view/images/nig2.avif" class="d-block w-100" alt="...">
                             <div class="aft">
                                 <h5 style="color: black;">Samuel Faith</h5>
                                 <p style="color: black;">"As a first-time mom, I was nervous and overwhelmed by the prospect of pregnancy and childbirth. But the team made me feel completely at ease. They provided me with all the information and support I needed to feel empowered and prepared for the journey ahead. I felt like I had a team of experts on my side, and that made all the difference."</p>
@@ -315,7 +315,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/birthsafe/app/view/images/nig3.avif" class="d-block w-100" alt="...">
+                            <img src="/birthsafegit/app/view/images/nig3.avif" class="d-block w-100" alt="...">
                             <div class="aft">
                                 <h5 style="color: black;">Uje Queen</h5>
                                 <p style="color: black;">"I had a high-risk pregnancy and was really worried about the health of my baby. But the team went above and beyond to provide me with the best care possible. They worked closely with me to develop a care plan that addressed all of my concerns and helped me manage my health throughout my pregnancy. Thanks to their support and expertise, my baby was born healthy and happy, and I will always be grateful to them for that."</p>

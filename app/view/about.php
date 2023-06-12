@@ -9,13 +9,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/b2b66f5784.js" crossorigin="anonymous"></script>
 
-    <script src="/birthsafe/app/view/media/script.js"></script>
+    <script src="/birthsafegit/app/view/media/script.js"></script>
     <title>birthsafe</title>
 </head>
 <style>
     .header-service {
         background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
-            url('/birthsafe/app/view/images/nig5.avif');
+            url('/birthsafegit/app/view/images/nig5.avif');
         background-size: cover;
         height: 465pt;
     }
@@ -23,7 +23,7 @@
     @media screen and (max-width: 600px) {
         .header-service {
             background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
-                url('/birthsafe/app/view/images/pexels5.webp');
+                url('/birthsafegit/app/view/images/pexels5.webp');
             background-size: cover;
             height: 465pt;
         }

@@ -31,7 +31,7 @@
         <h3 class=""><?php echo "$title"; ?></h3>
     </div>
     <div class="row">
-        <img class="mt-1 mb-5" src="/birthsafe/app/backend/images/<?php echo "$image"; ?>" class="img-fluid" alt="...">
+        <img class="mt-1 mb-5" src="/birthsafegit/app/backend/images/<?php echo "$image"; ?>" class="img-fluid" alt="...">
     </div>
 </button>
 </form>

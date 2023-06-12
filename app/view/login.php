@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="/birthsafe/app/view/media/script.js"></script>
+    <script src="/birthsafegit/app/view/media/script.js"></script>
     <title>birthsafe</title>
 </head>
 <style>
     .header-service {
         background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
-            url('/birthsafe/app/view/images/medium-shot.avif');
+            url('/birthsafegit/app/view/images/medium-shot.avif');
         background-size: cover;
         height: 465pt;
     }
@@ -51,7 +51,7 @@
     @media screen and (max-width: 600px) {
         body {
             background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
-                url('/birthsafe/app/view/images/medium-shot2.avif');
+                url('/birthsafegit/app/view/images/medium-shot2.avif');
             background-size: cover;
             height: 465pt;
         }

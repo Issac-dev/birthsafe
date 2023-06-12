@@ -15,7 +15,7 @@ require("heading.php");
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/b2b66f5784.js" crossorigin="anonymous"></script>
-    <script src="/birthsafe/app/view/media/script2.js"></script>
+    <script src="/birthsafegit/app/view/media/script2.js"></script>
     <title></title>
 </head>
 <style>
@@ -78,7 +78,7 @@ require("heading.php");
                             <h2 class="title"><?php echo "$title"; ?></h2>
                         </div>
                         <div class="row">
-                            <img style="height: 100%; width: 100%;" class="mt-1 mb-5" src="/birthsafe/app/backend/images/<?php echo "$image"; ?>" class="img-fluid" alt="...">
+                            <img style="height: 100%; width: 100%;" class="mt-1 mb-5" src="/birthsafegit/app/backend/images/<?php echo "$image"; ?>" class="img-fluid" alt="...">
                         </div>
                         <div class="lead">
                             <p><?php echo nl2br($body); ?></p>
@@ -142,11 +142,11 @@ require("heading.php");
                         <div class=" row bt5 lead mb-2">
                             <p style="font-size: 12pt;"><?php echo $user; ?> <?php echo $date; ?></p>
                             <p><?php echo $comment; ?></p>
-                            <img style="display: <?php echo $stack; ?>; width: 100%; hieght: 30%;" class="mt-1 mb-5" src="/birthsafe/app/backend/images/<?php echo $media; ?>" class="img-fluid" alt="...">
+                            <img style="display: <?php echo $stack; ?>; width: 100%; hieght: 30%;" class="mt-1 mb-5" src="/birthsafegit/app/backend/images/<?php echo $media; ?>" class="img-fluid" alt="...">
                             <audio controls style="display: <?php echo $stackaudio; ?>;">
-                                <source src="/birthsafe/app/backend/audiofile/<?php echo "$vn"; ?>" type="audio/mp3">
-                                <source src="/birthsafe/app/backend/audiofile/<?php echo "$vn"; ?>" type="audio/ogg">
-                                <source src="/birthsafe/app/backend/audiofile/<?php echo "$vn"; ?>" type="audio/webm">
+                                <source src="/birthsafegit/app/backend/audiofile/<?php echo "$vn"; ?>" type="audio/mp3">
+                                <source src="/birthsafegit/app/backend/audiofile/<?php echo "$vn"; ?>" type="audio/ogg">
+                                <source src="/birthsafegit/app/backend/audiofile/<?php echo "$vn"; ?>" type="audio/webm">
                             </audio>
                         </div>
                     <?php

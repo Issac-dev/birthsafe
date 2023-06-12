@@ -28,7 +28,7 @@ require("heading.php");
             <div class="col">
                 <div class="row">
                     <?php
-                    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/admin/connection.php';
+                    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/admin/connection.php';
                     $emailcat = $_SESSION['email'];
                     $selectcat = "SELECT `category` FROM `users` WHERE `email` = '$emailcat'";
                     $setcategory = mysqli_query($con, $selectcat);

@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/admin/connection.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/admin/connection.php';
 
 class functions
 {
@@ -31,7 +31,7 @@ class functions
 
   function login($email, $passwordd)
   {
-    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/admin/connection.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/admin/connection.php';
     $validateuser = "SELECT * FROM `users` WHERE `email` = '$email'";
     $user = mysqli_query($con, $validateuser);
 
@@ -62,7 +62,7 @@ class functions
 
       </html>
       <?php
-      require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/view/login.php';
+      require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/view/login.php';
     } else {
 
       $sql = "SELECT * FROM `users` WHERE `password` = '$passwordd' AND `email` = '$email'";
@@ -101,14 +101,14 @@ class functions
 
         </html>
   <?php
-        require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/view/login.php';
+        require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/view/login.php';
       }
     }
   }
 
   function signup($email, $name, $passwordd)
   {
-    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/admin/connection.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/admin/connection.php';
     $sql = "INSERT INTO `users`(`email`, `name`, `password`) VALUES 
           ('$email','$name','$passwordd')";
     $register = mysqli_query($con, $sql);
@@ -255,7 +255,7 @@ if (isset($_POST['changeemail'])) {
   } else {
     $update = "UPDATE `users` SET `email` = '$newemail' WHERE `email` = '$oldemail'";
     $up = mysqli_query($con, $update);
-    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/backend/logout.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/backend/logout.php';
   }
 }
 
@@ -298,7 +298,7 @@ if (isset($_POST['changepassword'])) {
   } else {
     $update = "UPDATE `users` SET `password` = '$newpassword' WHERE `email` = '$email'";
     $up = mysqli_query($con, $update);
-    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/backend/logout.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/backend/logout.php';
   }
 }
 if (isset($_POST['subscribe'])) {

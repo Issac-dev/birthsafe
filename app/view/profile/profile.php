@@ -28,7 +28,7 @@ require("heading.php");
       <div class="col">
         <div class="row">
           <?php
-          require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/admin/connection.php';
+          require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/admin/connection.php';
           $emailcat = $_SESSION['email'];
           $selectcat = "SELECT `category` FROM `users` WHERE `email` = '$emailcat'";
           $setcategory = mysqli_query($con, $selectcat);
@@ -94,7 +94,7 @@ require("heading.php");
                   <h2 class="title"><?php echo "$title"; ?></h2>
                 </div>
                 <div class="row">
-                  <img class="mt-1 mb-5" src="/birthsafe/app/backend/images/<?php echo "$image"; ?>" class="img-fluid" alt="...">
+                  <img class="mt-1 mb-5" src="/birthsafegit/app/backend/images/<?php echo "$image"; ?>" class="img-fluid" alt="...">
                 </div>
                 <div class="row">
                   <?php

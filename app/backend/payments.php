@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/admin/connection.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/admin/connection.php';
 
 if ($_GET['email']) {
     $paidemail = $_GET['email'];
@@ -31,7 +31,7 @@ if ($_GET['email']) {
 
         </html>
 <?php
-        require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/view/login.php';
+        require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/view/login.php';
     } else {
         $cat = $_GET['cat'];
         $sql = "UPDATE `users` SET `active`='1',`category`='$cat' WHERE `email` = '$paidemail'";

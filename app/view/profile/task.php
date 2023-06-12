@@ -15,7 +15,7 @@ require("heading.php");
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/b2b66f5784.js" crossorigin="anonymous"></script>
-    <script src="/birthsafe/app/view/media/script2.js"></script>
+    <script src="/birthsafegit/app/view/media/script2.js"></script>
     <title></title>
 </head>
 <style>
@@ -29,7 +29,7 @@ require("heading.php");
             <div class="col">
                 <div class="row">
                     <?php
-                    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/admin/connection.php';
+                    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/admin/connection.php';
                     $emailcat = $_SESSION['email'];
                     $selectcat = "SELECT `category` FROM `users` WHERE `email` = '$emailcat'";
                     $setcategory = mysqli_query($con, $selectcat);
@@ -127,15 +127,15 @@ require("heading.php");
                             <h2 class="title"><?php echo "$title"; ?></h2>
                         </div>
                         <div class="row">
-                            <img style="display: <?php echo $stack; ?>; width: 100%; hieght: 30%;" class="mt-1 mb-5" src="/birthsafe/app/backend/media/<?php echo $vn; ?>" class="img-fluid" alt="...">
+                            <img style="display: <?php echo $stack; ?>; width: 100%; hieght: 30%;" class="mt-1 mb-5" src="/birthsafegit/app/backend/media/<?php echo $vn; ?>" class="img-fluid" alt="...">
                             <video controls style="display: <?php echo $stackvideo; ?>;">
-                                <source src="/birthsafe/app/backend/media/<?php echo "$vn"; ?>" type="video/mp4">
-                                <source src="/birthsafe/app/backend/media/<?php echo "$vn"; ?>" type="video/webm">
+                                <source src="/birthsafegit/app/backend/media/<?php echo "$vn"; ?>" type="video/mp4">
+                                <source src="/birthsafegit/app/backend/media/<?php echo "$vn"; ?>" type="video/webm">
                             </video>
                             <audio controls style="display: <?php echo $stackaudio; ?>;">
-                                <source src="/birthsafe/app/backend/media/<?php echo "$vn"; ?>" type="audio/mp3">
-                                <source src="/birthsafe/app/backend/media/<?php echo "$vn"; ?>" type="audio/ogg">
-                                <source src="/birthsafe/app/backend/media/<?php echo "$vn"; ?>" type="audio/webm">
+                                <source src="/birthsafegit/app/backend/media/<?php echo "$vn"; ?>" type="audio/mp3">
+                                <source src="/birthsafegit/app/backend/media/<?php echo "$vn"; ?>" type="audio/ogg">
+                                <source src="/birthsafegit/app/backend/media/<?php echo "$vn"; ?>" type="audio/webm">
                             </audio>
                             <div class="lead">
                                 <p><?php echo nl2br($body); ?></p>

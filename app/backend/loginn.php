@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/admin/connection.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/admin/connection.php';
 require('functions.php');
 session_start();
 

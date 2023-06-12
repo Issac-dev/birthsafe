@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/admin/connection.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/admin/connection.php';
 require('functions.php');
 
 if (isset($_POST['register'])) {
@@ -84,7 +84,7 @@ if (isset($_POST['register'])) {
 
     </html>
 <?php
-    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafe/app/view/signup.php';
+    require $_SERVER['DOCUMENT_ROOT'] . '/birthsafegit/app/view/signup.php';
   }
 }
 

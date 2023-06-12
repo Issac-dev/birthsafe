@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <script src="/birthsafe/app/view/media/script.js"></script>
+    <script src="/birthsafegit/app/view/media/script.js"></script>
     <script>
         AOS.init({
             duration: 1500,

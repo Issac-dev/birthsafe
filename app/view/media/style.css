@@ -8,7 +8,7 @@ nav {
   }
 .header {
   background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
-  url('/birthsafe/app/view/images/home.png');
+  url('/birthsafegit/app/view/images/home.png');
   background-size: cover;
   height: 465pt;
 }
@@ -122,7 +122,7 @@ nav {
 }
 .community-header {
   background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
-  url('/birthsafe/app/view/images/portrait.avif');
+  url('/birthsafegit/app/view/images/portrait.avif');
   background-size: cover;
 }
 .logo {
@@ -173,7 +173,7 @@ nav {
 @media screen and (max-width: 600px) {
   .header {
     background-image: linear-gradient(to bottom, rgba(235, 191, 213, 0.767), rgba(209, 67, 162, 0.521)),
-    url('/birthsafe/app/view/images/black-mother.avif');
+    url('/birthsafegit/app/view/images/black-mother.avif');
     background-size: cover;
     height: 465pt;
   }
